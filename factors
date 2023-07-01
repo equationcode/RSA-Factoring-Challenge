@@ -3,6 +3,16 @@ import sys
 from sys import argv
 
 
+"""
+File_name: factors
+Created: 1st July, 2023
+Author: Paul Nweke
+Size: Not defined
+Project: RSA-Factoring-Challenge
+"""
+
+
+
 def factorize(value):
 
     """
@@ -38,9 +48,9 @@ try:
             factorize(value)
             line = file.readline()
 except FileNotFoundError:
-print(f'File not found: {argv}')
+    print(f'File not found: {argv}')
 except ValueError:
-print(f'Invalid input in the file: {argv}')
+    print(f'Invalid input in the file: {argv}')
 except Exception as e:
-print(f'An error occured: {str(e)}')
-pass
+    print(f'An error occured: {str(e)}')
+    pass
